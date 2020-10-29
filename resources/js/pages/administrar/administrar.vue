@@ -2,7 +2,7 @@
   <section>
     <h1>administrar</h1>
 
-    <i class="mdi mdi-pencil"></i>
+    <fa icon="user-plus"/>
 
   </section>
 </template>
