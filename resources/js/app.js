@@ -4,6 +4,7 @@ import router from '~/router'
 import i18n from '~/plugins/i18n'
 import App from '~/components/App'
 
+
 import '~/plugins'
 import '~/components'
 
@@ -11,6 +12,7 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
+  el: '#app',
   i18n,
   store,
   router,
