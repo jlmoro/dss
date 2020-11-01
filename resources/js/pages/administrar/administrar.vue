@@ -1,16 +1,30 @@
 <template>
   <section>
     <h1>administrar</h1>
+    <b-button variant="primary" @click="modalCrear">
+      <fa icon="user-plus"/>
+      Nuevo Usuario
+    </b-button>
 
-    <fa icon="user-plus"/>
+
+    <modal-crear ref="modalCrearRegistro"/>
 
   </section>
 </template>
 <script>
 export default {
+  components: {
+    ModalCrear:()=>import('./components/modalCrear'),
+    // ModalEliminar:()=>import('./components/eliminarProductoTipo')
+  },
   data(){
     return{
 
+    }
+  },
+  methods: {
+    modalCrear() {
+      this.$refs.modalCrearRegistro.toggle()
     }
   }
 }
