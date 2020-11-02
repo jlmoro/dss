@@ -5,6 +5,7 @@ import Button from './Button'
 import Checkbox from './Checkbox'
 import modalForm from './modales/modalForm'
 import modalEliminar from './modales/modalEliminar'
+import menuDss from './menuDss'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 import { HasError, AlertError, AlertSuccess } from 'vform'
@@ -20,6 +21,7 @@ import { HasError, AlertError, AlertSuccess } from 'vform'
   AlertSuccess,
   modalForm,
   modalEliminar,
+  menuDss
 ].forEach(Component => {
   Vue.component(Component.name, Component)
 })

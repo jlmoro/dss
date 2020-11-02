@@ -1,15 +1,25 @@
 <template>
   <div class="main-layout">
-    <navbar />
+    <div class="row w-100">
+      <div class="col-md-2">
+        <menu-dss />
+      </div>
+      <div class="col-md-9">
 
-    <div class="container mt-4">
-      <child />
+        <navbar />
+
+        <div class="mt-4">
+          <child />
+        </div>
+      </div>
     </div>
+
   </div>
 </template>
 
 <script>
 import Navbar from '~/components/Navbar'
+import MenuDss from '~/components/menuDss'
 
 export default {
   name: 'MainLayout',

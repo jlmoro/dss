@@ -1,7 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <nav v-if="user" class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
-      <router-link :to="{ name: user ? 'home' : 'welcome' }" class="navbar-brand">
+      <router-link :to="{ name: user ? 'home' : 'login' }" class="navbar-brand">
+        <fa icon="bars"/>
         {{ appName }}
       </router-link>
 
