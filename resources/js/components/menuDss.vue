@@ -1,10 +1,45 @@
 <template>
   <section class="menu-principal">
+
+    <div>
+      <b-button v-b-toggle.sidebar-variant>Toggle Sidebar</b-button>
+      <b-sidebar id="sidebar-variant" title="Sidebar" bg-variant="dark" text-variant="light" shadow>
+        <div class="px-3 py-2">
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
+        </div>
+      </b-sidebar>
+    </div>
+
     <nav v-if="user" id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="row">
+        <div class="col-md-4">
+          <span>DSS</span>
+        </div>
+        <div class="col-md-8">
+          <img src="https://colegiosantiagomayor.edu.co/wp-content/uploads/2018/01/Logo.jpg"
+          height="80" width="80" alt="">
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-7">
+          <span> <img src="https://cdn.shopify.com/s/files/1/0099/9562/files/Header-Icon-User.png?14597416339728210630"
+            alt="" height="110" width="110"> </span>
+        </div>
+        <div class="col-md-5">
+          <span>Nombre usuario</span>
+          <span>Rol usuario</span>
+        </div>
+      </div>
+      <hr>
       <div class="sidebar-sticky pt-3">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <router-link class="nav-link" :to="{ name: 'home' }">
+            <router-link class="nav-link" :to="{ name: 'dashboard.principal' }">
               <fa icon="tachometer-alt"/>
               Dashboard <span class="sr-only">(current)</span>
             </router-link>

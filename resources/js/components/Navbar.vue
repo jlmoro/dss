@@ -2,7 +2,7 @@
   <nav v-if="user" class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
       <router-link :to="{ name: user ? 'home' : 'login' }" class="navbar-brand">
-        <fa icon="bars"/>
+        <!-- <fa icon="bars" @click="$emit ('change', $event.target.checked)"/> -->
         {{ appName }}
       </router-link>
 
