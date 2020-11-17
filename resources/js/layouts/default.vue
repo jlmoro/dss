@@ -4,7 +4,7 @@
       <div class="col-md-2">
         <menu-dss />
       </div>
-      <div class="col-md-9">
+      <div class="col-md-10">
 
         <navbar />
 
