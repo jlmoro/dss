@@ -1,6 +1,7 @@
 <template>
   <section class="dashboard-principal">
     <h1>Dashboard principal</h1>
+
     <div class="row">
       <div class="col-md-12">
         <div id="chartdiv"></div>
@@ -24,7 +25,7 @@ export default {
   name: "",
   data(){
     return{
-      
+      value: '100'
     }
   },
   mounted() {
