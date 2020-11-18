@@ -16,10 +16,10 @@ import {
   faHome,
   faBars,
   faAt,
-  faTachometerAlt,
-  faChartLinechartLine,
-  faElementor,
-  
+  faChartLine,
+  faBell,
+  // faElementor
+
 
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -38,10 +38,9 @@ library.add(
   faHome,
   faBars,
   faAt,
-  faTachometerAlt,
-  faChartLinechartLine,
-  faElementor,
-  
+  faChartLine,
+  faBell,
+  // faElementor
 )
 
 Vue.component('fa', FontAwesomeIcon)

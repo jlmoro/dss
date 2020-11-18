@@ -57,7 +57,10 @@ function publishAseets () {
 
   fs.copySync(path.join(publicDir, 'build', 'dist'), path.join(publicDir, 'dist'))
   fs.removeSync(path.join(publicDir, 'build'))
+
 }
+
+// }
 
 dominio = process.env.APP_URL
 

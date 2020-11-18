@@ -1,6 +1,6 @@
 <template>
   <section class="menu-principal">
-    <nav id="sidebarMenu" class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
+    <nav v-if="user" id="sidebarMenu" class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
       <a class="navbar-brand w-100 bg-primary mr-0 px-3" href="#">DSS - INSELPA</a>
       <div class="sidebar-sticky pt-3">
         <ul class="nav flex-column">
@@ -152,12 +152,13 @@ export default {
     user: 'auth/user'
   }),
   mounted() {
-
+    this.listar_menu()
   },
   methods: {
     async listar_menu(){
       try {
-        const {data} = await axios(`/api/menu/listar-menu-principal`)
+        const {data} = await axios(`/api/menu/listar-menu`)
+        this.dataMenu = data
       } catch (e) {
         console.warn(e);
       }
