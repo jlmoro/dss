@@ -5,9 +5,7 @@
         <menu-dss />
       </div>
       <div class="col-md-10">
-
         <navbar />
-
         <div class="mt-4">
           <child />
         </div>
@@ -19,13 +17,14 @@
 
 <script>
 import Navbar from '~/components/Navbar'
-import MenuDss from '~/components/menuDss'
+// import MenuDss from '~/components/menuDss'
 
 export default {
   name: 'MainLayout',
 
   components: {
-    Navbar
+    Navbar,
+    MenuDss:()=>import('~/components/menuDss')
   }
 }
 </script>

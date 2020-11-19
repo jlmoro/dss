@@ -145,24 +145,22 @@ export default {
   name: "menuDss",
   data(){
     return{
-      dataMenu:[],
+      // dataMenu:[],
     }
   },
-  computed: mapGetters({
-    user: 'auth/user'
-  }),
-  mounted() {
-    this.listar_menu()
+  computed:{
+    ...mapGetters({
+      user: 'auth/user',
+      dataMenu: 'menu/getMenu'
+    })
+  },
+  mounted(){
+    if(this.$store.getters['auth/check']){
+      this.$store.dispatch('menu/listarMenu')
+    }
   },
   methods: {
-    async listar_menu(){
-      try {
-        const {data} = await axios(`/api/menu/listar-menu`)
-        this.dataMenu = data
-      } catch (e) {
-        console.warn(e);
-      }
-    }
+    
   }
 }
 </script>
