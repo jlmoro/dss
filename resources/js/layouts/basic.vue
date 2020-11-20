@@ -10,7 +10,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .basic-layout {
   color: #636b6f;
   height: 100vh;
