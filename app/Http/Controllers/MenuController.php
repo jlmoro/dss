@@ -10,8 +10,20 @@ class MenuController extends Controller
   public function listar_menu_principal()
   {
     try {
-      return Menu::all();
+      $menuPadre = Menu::select('id','menu','icono','posicion','ruta')
+      ->whereNull('menu_item')
+      ->orderBy('posicion','ASC')
+      ->get();
 
+      foreach ($menuPadre as $key => $value) {
+        $value->items = Menu::select('id','menu','icono','posicion','ruta')
+        ->where('menu_item',$value->id)
+        ->orderBy('posicion','ASC')
+        ->get();
+      }
+
+      return $menuPadre;
+      
     } catch (\Exception $e) {
       return $this->captura_error($e,"Error al mostrar menú");
     }
