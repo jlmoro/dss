@@ -2,20 +2,17 @@
   <section class="menu-principal">
     <nav v-if="user" id="sidebarMenu" class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
       <a class="navbar-brand w-100 bg-primary mr-0 px-3" href="#">DSS - INSELPA</a>
+      <div class="mt-2 ml-4">
+        <img src="/img/logo_2.png" width="100" height="100" alt="">
+      </div>
       <div class="sidebar-sticky pt-3">
         <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">
-              <span data-feather="home"></span>
-              Dashboard <span class="sr-only">(current)</span>
-            </a>
-          </li>
           <li class="nav-item" v-for="(data,m) in dataMenu" :key="m">
             <!-- <a class="nav-link active" :href="data.ruta"> -->
-            <a class="nav-link" :href="data.ruta">
-              <fa :icon="data.icono"/>
-              <span>{{data.menu}}</span> <span class="sr-only">(current)</span>
-            </a>
+            <router-link class="nav-link" :to="{ name: data.ruta}">
+              <fa :icon="data.icono" class="f-15"/>
+              <span class="letra-capital ml-1">{{data.menu}}</span> <span class="sr-only">(current)</span>
+            </router-link>
           </li>
         </ul>
       </div>

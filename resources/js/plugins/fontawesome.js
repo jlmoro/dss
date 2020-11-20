@@ -18,6 +18,9 @@ import {
   faAt,
   faChartLine,
   faBell,
+  faUniversity,
+  faTools,
+  faChalkboardTeacher,
   // faElementor
 
 
@@ -40,6 +43,9 @@ library.add(
   faAt,
   faChartLine,
   faBell,
+  faUniversity,
+  faTools,
+  faChalkboardTeacher,
   // faElementor
 )
 
