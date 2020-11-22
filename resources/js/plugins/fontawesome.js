@@ -23,6 +23,7 @@ import {
   faChalkboardTeacher,
   faTimes,
   faCheck,
+  faSearch,
   // faElementor
 
 
@@ -50,6 +51,7 @@ library.add(
   faChalkboardTeacher,
   faTimes,
   faCheck,
+  faSearch,
   // faElementor
 )
 
