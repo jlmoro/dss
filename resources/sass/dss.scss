@@ -1,3 +1,12 @@
+.btn-guardar{
+  border: none;
+  background: none;
+}
+.btn-cerrar{
+  border: none;
+  background: none;
+}
+
 .f-12{
   font-size: 12px !important;
 }
@@ -22,6 +31,19 @@
 
 .cr-pointer{
   cursor: pointer;
+}
+
+.modal-header{
+  .close{
+
+  }
+}
+
+.modal-header{
+  border-bottom: none !important;
+}
+.modal-footer{
+  border-top: none !important;
 }
 
 .letra-capital{

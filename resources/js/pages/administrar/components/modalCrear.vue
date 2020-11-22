@@ -11,10 +11,12 @@
      </div>
      <div slot="footer" class="row">
        <div class="col-md-6">
-         <button type="button" class="btn-crear" name="button" > Crear </button>
+
+         <button type="button" class="btn-cancelar" data-dismiss="modal"> Cerrar </button>
        </div>
        <div class="col-md-6">
-         <button type="button" class="btn-cancelar" data-dismiss="modal"> Cerrar </button>
+         
+         <button type="button" class="btn-guardar" name="button" > Crear </button>
        </div>
      </div>
 
@@ -26,7 +28,7 @@ export default {
   name: "",
   data(){
     return{
-      
+
     }
   },
   methods: {

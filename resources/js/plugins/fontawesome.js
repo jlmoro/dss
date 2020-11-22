@@ -21,6 +21,8 @@ import {
   faUniversity,
   faTools,
   faChalkboardTeacher,
+  faTimes,
+  faCheck,
   // faElementor
 
 
@@ -46,6 +48,8 @@ library.add(
   faUniversity,
   faTools,
   faChalkboardTeacher,
+  faTimes,
+  faCheck,
   // faElementor
 )
 

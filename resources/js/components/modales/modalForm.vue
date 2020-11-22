@@ -21,10 +21,16 @@
               <p>Cuerpo por defecto</p>
             </slot>
           </div>
-          <div class="modal-footer justify-content-center">
+          <div class="modal-footer justify-content-end">
             <slot name="footer">
-              <button type="button" class="btn btn-primary">Guardar</button>
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                <fa icon="times" />
+                Cerrar
+              </button>
+              <button type="button" class="btn-guardar">
+                <fa icon="check" />
+                Guardar
+              </button>
             </slot>
           </div>
           </form>
@@ -65,4 +71,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+
 </style>
