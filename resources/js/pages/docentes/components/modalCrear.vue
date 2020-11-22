@@ -3,7 +3,7 @@
 
      <div slot="header" class="row">
        <div class="col-12">
-         <p class="letra-capital">registrar producto</p>
+         <p class="letra-capital">registrar docente</p>
        </div>
      </div>
      <div slot="body" class="row w-100">

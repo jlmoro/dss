@@ -23,12 +23,10 @@
           </div>
           <div class="modal-footer justify-content-end">
             <slot name="footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                <fa icon="times" />
+              <button type="button" class="btn btn-cerrar" data-dismiss="modal">
                 Cerrar
               </button>
               <button type="button" class="btn-guardar">
-                <fa icon="check" />
                 Guardar
               </button>
             </slot>
