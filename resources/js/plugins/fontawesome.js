@@ -24,6 +24,9 @@ import {
   faTimes,
   faCheck,
   faSearch,
+  faFilePdf,
+  faFileExcel,
+  faFileCsv,
   // faElementor
 
 
@@ -52,6 +55,9 @@ library.add(
   faTimes,
   faCheck,
   faSearch,
+  faFilePdf,
+  faFileExcel,
+  faFileCsv,
   // faElementor
 )
 

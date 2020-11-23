@@ -4,8 +4,8 @@
       <div :class="`modal-dialog modal-dialog-centered modal-${size} ${isScroll}`">
         <div class="modal-content">
           <form class="">
-          <div class="modal-header">
-            <div class="modal-header">
+          <div class="modal-header p-1 m-0">
+            <div class="modal-header p-1 m-0 mb-0">
               <slot name="header">
                 <h5 class="modal-title" id="exampleModalLabel">
                   titulo
@@ -69,5 +69,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
+.modal-header{
+  background-color: #025949;
+  color: white;
+}
 </style>
