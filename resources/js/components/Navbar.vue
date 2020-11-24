@@ -20,7 +20,7 @@
           <template #title>{{user.name}}</template>
           <div class="">
             <fa icon="user" class="mr-1" style="font-size:15px;"/>
-            <span style="font-size:16px;">Perfil</span>
+            <span style="font-size:16px;" @click.prevent="perfil">Perfil</span>
           </div>
           <div class="mt-2">
             <fa icon="cog" class="mr-1" style="font-size:15px;"/>
@@ -63,6 +63,11 @@ export default {
 
       // redireccionar al login
       this.$router.push({ name: 'login' })
+    },
+    perfil(){
+      this.$router.push({
+        name: 'perfil.usuario'
+      })
     }
   }
 }
