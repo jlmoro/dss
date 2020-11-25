@@ -103,20 +103,20 @@ export default {
       rows: 100,
       currentPage: 1,
       options: [{
-          value: 'Option1',
-          label: 'Option1'
+          value: 5,
+          label: '5'
         }, {
-          value: 'Option2',
-          label: 'Option2'
+          value: 10,
+          label: '10'
         }, {
-          value: 'Option3',
-          label: 'Option3'
+          value: 15,
+          label: '15'
         }, {
-          value: 'Option4',
-          label: 'Option4'
+          value: 20,
+          label: '20'
         }, {
-          value: 'Option5',
-          label: 'Option5'
+          value: '25',
+          label: '25'
         }],
         value: ''
     }

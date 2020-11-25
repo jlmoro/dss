@@ -27,7 +27,7 @@ import {
   faFilePdf,
   faFileExcel,
   faFileCsv,
-  // faElementor
+  faCalendarAlt
 
 
 } from '@fortawesome/free-solid-svg-icons'
@@ -58,7 +58,7 @@ library.add(
   faFilePdf,
   faFileExcel,
   faFileCsv,
-  // faElementor
+  faCalendarAlt
 )
 
 Vue.component('fa', FontAwesomeIcon)

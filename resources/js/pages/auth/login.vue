@@ -76,7 +76,7 @@ export default {
       this.$store.dispatch('menu/listarMenu')
 
       // Redirect home.
-      this.$router.push({ name: 'dashboard.principal' })
+      this.$router.push({ name: 'docentes.listar' })
     }
   }
 }
