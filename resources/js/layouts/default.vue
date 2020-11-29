@@ -1,10 +1,10 @@
 <template>
   <div class="main-layout">
     <div class="row w-100">
-      <div class="col-md-2">
+      <div class="col-md-3 p-0 m-0">
         <menu-dss />
       </div>
-      <div class="col-md-10">
+      <div class="col-md-9 p-0 m-0">
         <navbar />
         <div class="mt-4">
           <child />

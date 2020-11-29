@@ -1,10 +1,8 @@
 <template>
   <section class="menu-principal" v-if="user">
     <div class="hidden">
-      <vs-sidebar
 
-        v-model="active"
-        open  >
+      <vs-sidebar v-model="active" open>
         <template #logo>
           <div class="mt-2 ml-4">
             <img src="/img/logo_2.png" width="100" height="100" alt="">
@@ -56,11 +54,13 @@ export default {
       dataMenu: 'menu/getMenu'
     })
   },
-  mounted(){
+  created() {
     if(this.$store.getters['auth/check']){
       this.$store.dispatch('menu/listarMenu')
     }
   },
+  // mounted(){
+  // },
   methods: {
 
   }
@@ -68,6 +68,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 .menu-principal{
-
+  .vs-sidebar-content .vs-sidebar__logo img{
+    max-width: 120px;
+    max-height: 101px;
+  }
+  .vs-sidebar-content{
+    // max-width: 208px !important;
+    border-radius: 0px 8px 8px 0px !important;
+  }
 }
 </style>
