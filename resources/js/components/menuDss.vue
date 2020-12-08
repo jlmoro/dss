@@ -75,7 +75,6 @@ export default {
   .vs-sidebar-content{
     // max-width: 208px !important;
     border-radius: 0px 8px 8px 0px !important;
-    z-index: 1000;
   }
 }
 </style>
