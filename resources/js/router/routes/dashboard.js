@@ -3,12 +3,17 @@ export default [
   {
     path: '/dashboard',
     name: 'dashboard',
-    // component: page('dashboard/dashboardPrincipal')
+    component: page('dashboard/index')
     children: [
+      {
+        path: 'dashboard-datos',
+        name: 'dashboard.datos',
+        component: page('dashboard/dashboardDatos')
+      },
       {
         path: 'dashboard-principal',
         name: 'dashboard.principal',
-        component: page('dashboard/dashboardPrincipal')
+        component: page('dashboard/dashboardDatos')
       },
       // {
       //   path: 'perifericos/listar',
