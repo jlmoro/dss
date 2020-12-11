@@ -3,7 +3,7 @@ export default [
   {
     path: '/dashboard',
     name: 'dashboard',
-    component: page('dashboard/index')
+    component: page('dashboard/index'),
     children: [
       {
         path: 'dashboard-datos',

@@ -22,7 +22,13 @@ export default {
 
     }
   },
+  mounted() {
+
+  },
   methods: {
+    listar_administrar(){
+
+    },
     modalCrear() {
       this.$refs.modalCrearRegistro.toggle()
     }
